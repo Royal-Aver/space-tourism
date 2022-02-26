@@ -1,15 +1,14 @@
 body {
-  font-family: "SF-Pro-Display";
+  font-family: "SF", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  background-color: #000;
 }
 
 .container {
   max-width: 1230px;
-  padding: 15px 0;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -67,6 +66,8 @@ select {
 }
 
 button {
+  width: 100%;
+  background-color: transparent;
   padding: 0;
   cursor: pointer;
 }
@@ -85,7 +86,7 @@ a {
 }
 
 @font-face {
-  font-family: SF-Pro-Display;
+  font-family: SF;
   font-display: swap;
   src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
   font-weight: 700;
@@ -93,7 +94,7 @@ a {
 }
 
 @font-face {
-  font-family: SF-Pro-Display;
+  font-family: SF;
   font-display: swap;
   src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"), url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
   font-weight: 400;
@@ -101,15 +102,15 @@ a {
 }
 
 @font-face {
-  font-family: Space;
+  font-family: SpaceAge;
   font-display: swap;
-  src: url("../fonts/Space-Age.woff2") format("woff2"), url("../fonts/Space-Age.woff") format("woff");
+  src: url("../fonts/spaceagecyrillicregular.woff2") format("woff2"), url("../fonts/spaceagecyrillicregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 .header {
-  padding: 80px 15px 0;
+  padding: 80px 15px 30px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -129,20 +130,10 @@ a {
           align-items: center;
 }
 
-.header__menu {
-  width: 65%;
-}
-
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__item {
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
 }
 
 .header__item:not(:last-child) {
@@ -150,16 +141,15 @@ a {
 }
 
 .header__link {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
 .header__link:hover {
-  color: #ca0d0d;
-}
-
-.header__link--active {
   color: #ca0d0d;
 }
 
@@ -173,7 +163,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 35%;
 }
 
 .header__phone {
@@ -188,11 +177,105 @@ a {
   color: #ca0d0d;
 }
 
-.header__user-img-inner {
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+.header__login {
   margin-left: 20px;
+  border: none;
+  width: auto;
 }
+
+.no-webp .hero {
+  background: url(../../img/hero/hero-bg.jpg) no-repeat top right; }
+
+.hero {
+  background-size: cover;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  max-width: 600px;
+}
+
+.left-hero__title {
+  font-family: SpaceAge, sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.left-hero__title-bottom {
+  font-size: 110px;
+}
+
+.left-hero__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 50px;
+}
+
+.hero__btn {
+  color: inherit;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 15px 30px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.hero__btn:hover {
+  background-color: #036cca;
+  border: 1px solid transparent;
+}
+
+.hero__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px 0 5%;
+  margin-top: auto;
+}
+
+.hero__right p {
+  max-width: 165px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.hero__right p:not(:last-child) {
+  margin-right: 50px;
+}
+
+.webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
