@@ -6,10 +6,22 @@ body {
   color: #ffffff;
 }
 
+.section {
+  padding: 100px 0;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.title {
+  font-family: SpaceAge;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-bottom: 100px;
 }
 
 html {
@@ -240,23 +252,6 @@ a {
   margin-bottom: 50px;
 }
 
-.hero__btn {
-  color: inherit;
-  font-size: 24px;
-  line-height: 29px;
-  padding: 15px 30px;
-  border: 1px solid #ffffff;
-  text-transform: uppercase;
-  -webkit-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
-}
-
-.hero__btn:hover {
-  background-color: #036cca;
-  border: 1px solid transparent;
-}
-
 .hero__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,4 +273,140 @@ a {
   margin-right: 50px;
 }
 
+.btn {
+  color: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 15px 15px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.btn--hero-big {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.btn:hover {
+  background-color: #036cca;
+  border: 1px solid transparent;
+}
+
+.no-webp .about {
+  background: url(../../img/about/about-bg.jpg) top center no-repeat; }
+
+.about {
+  background-size: cover;
+}
+
+.about__title {
+  margin-bottom: 5px;
+}
+
+.item-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-about:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.item-about:not(:last-child) {
+  margin-bottom: 150px;
+}
+
+.content-about {
+  max-width: 600px;
+  width: 100%;
+}
+
+.content-about__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.content-about__subtitle {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #036cca;
+  margin-bottom: 30px;
+}
+
+.content-about__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.content-about__desc p {
+  width: 165px;
+}
+
+.content-about__desc p:not(:last-child) {
+  margin-right: 30px;
+}
+
+.table-about {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.table-about__tr {
+  border: 1px solid #ffffff;
+  border-left: none;
+  border-right: none;
+}
+
+.table-about__tr:not(:first-child) .table-about__td {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.table-about__td {
+  padding: 10px 30px 10px 0;
+}
+
+.table-about__text {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.about-content__btn {
+  max-width: 300px;
+  width: 100%;
+}
+
+.table-about__caption {
+  caption-side: bottom;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #e5e5e5;
+}
+
 .webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
+
+.webp .about { background: url(../../img/about/about-bg.webp) top center no-repeat; }

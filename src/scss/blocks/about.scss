@@ -1,0 +1,98 @@
+.about {
+  background: url(../../img/about/about-bg.jpg) top center no-repeat;
+  background-size: cover;
+}
+
+.about__title {
+  margin-bottom: 5px;
+}
+
+.item-about {
+  display: flex;
+  justify-content: space-between;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 150px;
+  }
+}
+
+.content-about {
+  max-width: 600px;
+  width: 100%;
+}
+
+.content-about__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.content-about__subtitle {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $blue;
+  margin-bottom: 30px;
+}
+.content-about__desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  & p {
+    width: 165px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+}
+
+.table-about {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.table-about__tr {
+  border: 1px solid $white;
+  border-left: none;
+  border-right: none;
+
+  &:not(:first-child) {
+    .table-about__td {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+}
+
+.table-about__td {
+  padding: 10px 30px 10px 0;
+}
+
+.table-about__text {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.about-content__btn {
+  max-width: 300px;
+  width: 100%;
+}
+
+.table-about__caption {
+  caption-side: bottom;
+  text-align-last: left;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $gray;
+}

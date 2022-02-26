@@ -6,8 +6,20 @@ body {
     color: $white;
 }
 
+.section {
+    padding: 100px 0;
+}
+
 .container {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.title {
+    font-family: SpaceAge;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    margin-bottom: 100px;
 }
