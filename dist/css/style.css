@@ -493,6 +493,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 140px;
 }
 
 .special__item {
@@ -559,6 +560,59 @@ a {
 .special__new-price {
   font-size: 48px;
   line-height: 57px;
+}
+
+.services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.services__name,
+.services__text {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.services__name {
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.services__text {
+  margin-left: 35px;
+}
+
+.services__text p {
+  position: relative;
+}
+
+.services__text p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: -35px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.services__btn:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.services__footnote {
+  font-size: 12px;
+  line-height: 14px;
+  color: #e5e5e5;
 }
 
 .webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
