@@ -1,0 +1,43 @@
+.how-to {
+  background: url(../../img/how-to/how-to-bg.jpg) top center no-repeat;
+  background-size: cover;
+}
+
+.how-to__box {
+  text-align: center;
+
+  & circle,
+  & text,
+  & foreignObject {
+    transition: fill .3s ease-in-out, font-size .8s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  & foreignObject {
+    text-align: left;
+    transition: color .3s ease-in-out, font-size .8s ease-in-out;
+    }
+
+  & g:hover {
+    circle {
+      r: 20px;
+      fill: $blue;
+    }
+
+  }
+
+  & g:hover {
+    text {
+      fill: $blue;
+      font-size: 36px;
+    }
+  }
+
+  & g:hover {
+    foreignObject {
+      color: $blue;
+      font-size: 22px;
+    }
+  }
+}

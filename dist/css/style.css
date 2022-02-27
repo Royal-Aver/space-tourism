@@ -302,10 +302,6 @@ a {
   background-size: cover;
 }
 
-.about__title {
-  margin-bottom: 5px;
-}
-
 .item-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,7 +319,7 @@ a {
 }
 
 .item-about:not(:last-child) {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .content-about {
@@ -407,6 +403,51 @@ a {
   color: #e5e5e5;
 }
 
+.no-webp .how-to {
+  background: url(../../img/how-to/how-to-bg.jpg) top center no-repeat; }
+
+.how-to {
+  background-size: cover;
+}
+
+.how-to__box {
+  text-align: center;
+}
+
+.how-to__box circle,
+.how-to__box text,
+.how-to__box foreignObject {
+  -webkit-transition: fill 0.3s ease-in-out, font-size 0.8s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out, font-size 0.8s ease-in-out;
+  transition: fill 0.3s ease-in-out, font-size 0.8s ease-in-out;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.how-to__box foreignObject {
+  text-align: left;
+  -webkit-transition: color 0.3s ease-in-out, font-size 0.8s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, font-size 0.8s ease-in-out;
+  transition: color 0.3s ease-in-out, font-size 0.8s ease-in-out;
+}
+
+.how-to__box g:hover circle {
+  r: 20px;
+  fill: #036cca;
+}
+
+.how-to__box g:hover text {
+  fill: #036cca;
+  font-size: 36px;
+}
+
+.how-to__box g:hover foreignObject {
+  color: #036cca;
+  font-size: 22px;
+}
+
 .webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
 
 .webp .about { background: url(../../img/about/about-bg.webp) top center no-repeat; }
+
+.webp .how-to { background: url(../../img/how-to/how-to-bg.webp) top center no-repeat; }
