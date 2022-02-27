@@ -1,7 +1,7 @@
 .make-it {
   background: url(../../img/make-it/make-it-bg.jpg) top left no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: calc(100vh - 25px);
 }
 
 .make-it__container {
