@@ -5,16 +5,41 @@
     z-index: 1000;
     width: 100%;
     background-color: transparent;
+
+    @include max($xl) {
+        padding: 30px 15px 30px;
+      }
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include max($xl) {
+
+      }
 }
 
 .header__list {
     display: flex;
+
+    &--active {
+        transform: translateX(0);
+    }
+
+    @include max($xl) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        padding-top: 100px;
+        background-color: #000;
+        text-align: center;
+        transform: translateX(-150%);
+      }
 }
 
 .header__item {
@@ -22,6 +47,14 @@
     &:not(:last-child) {
         margin-right: 30px;
     }
+
+    @include max($xl) {
+        padding: 30px 20px;
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+      }
 }
 
 .header__link {
@@ -32,6 +65,10 @@
 
     &:hover {
         color: $red;
+    }
+
+    @include max($xl) {
+        padding: 20px 30px;
     }
 }
 

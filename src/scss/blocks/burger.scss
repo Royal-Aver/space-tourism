@@ -1,0 +1,35 @@
+.burger {
+  display: none;
+  width: 40px;
+  border: none;
+
+  @include max($xl) {
+      display: block;
+    }
+}
+
+.burger__line {
+  display: block;
+  height: 2px;
+  background-color: $white;
+  position: relative;
+  z-index: 10;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: $white;
+    left: 0;
+  }
+
+  &::after {
+    top: 10px;
+  }
+
+  &::before {
+    bottom: 10px;
+  }
+}

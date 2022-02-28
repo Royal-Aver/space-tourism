@@ -2,3 +2,19 @@ $white: #ffffff;
 $blue: #036cca;
 $red: #ca0d0d;
 $gray: #e5e5e5;
+
+$sm: 320px;
+$md: 768px;
+$xl: 1440px;
+
+@mixin max($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
