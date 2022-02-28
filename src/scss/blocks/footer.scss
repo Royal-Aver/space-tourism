@@ -1,0 +1,38 @@
+.footer {
+  background: url(../../img/footer/footer-bg.jpg) top center no-repeat;
+  background-size: cover;
+  padding: 100px 0 150px;
+}
+.footer__container {
+}
+
+.footer__list {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.footer__text {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.footer__link {
+  text-transform: uppercase;
+  transition: color .5s ease-in-out;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    color: $red;
+  }
+}
