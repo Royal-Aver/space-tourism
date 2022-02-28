@@ -67,6 +67,10 @@
 
 //----special------------------
 
+.services {
+  margin-bottom: 200px;
+}
+
 .services__content {
   display: flex;
   justify-content: space-between;
@@ -104,9 +108,24 @@
   }
 }
 
-.services__btn:not(:last-child) {
-  margin-bottom: 40px;
+.services__btn {
+  position: relative;
+  &--astrounat::before {
+    content: "";
+    background-image: url(../../img/offers/astronaut.png);
+    width: 192px;
+    height: 150px;
+    position: absolute;
+    top: -130px;
+    right: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
+
+
 
 .services__footnote {
   font-size: 12px;

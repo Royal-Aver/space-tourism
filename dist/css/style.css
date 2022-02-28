@@ -562,6 +562,10 @@ a {
   line-height: 57px;
 }
 
+.services {
+  margin-bottom: 200px;
+}
+
 .services__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +609,22 @@ a {
   border-radius: 50%;
 }
 
+.services__btn {
+  position: relative;
+}
+
+.no-webp .services__btn--astrounat::before {
+  background-image: url(../../img/offers/astronaut.png); }
+
+.services__btn--astrounat::before {
+  content: "";
+  width: 192px;
+  height: 150px;
+  position: absolute;
+  top: -130px;
+  right: 0;
+}
+
 .services__btn:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -613,6 +633,37 @@ a {
   font-size: 12px;
   line-height: 14px;
   color: #e5e5e5;
+}
+
+.swiper-container {
+  border: 1px solid #ffffff;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+
+.swiper-img {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+}
+
+.swiper-button-next {
+  right: 30px;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+.swiper-text {
+  font-family: SpaceAge, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
@@ -624,3 +675,5 @@ a {
 .webp .make-it { background: url(../../img/make-it/make-it-bg.webp) top left no-repeat; }
 
 .webp .offers { background: url(../../img/offers/offers-bg.webp) top center no-repeat; }
+
+.webp .services__btn--astrounat::before { background-image: url(../../img/offers/astronaut.webp); }

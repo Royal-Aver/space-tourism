@@ -2,6 +2,9 @@ import * as flsFunction from "./modules/function.js";
 
 flsFunction.isWebp();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiper = new Swiper();
+new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+});
