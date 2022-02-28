@@ -77,6 +77,13 @@ select {
   letter-spacing: inherit;
 }
 
+input {
+  color: inherit;
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
 button {
   width: 100%;
   background-color: transparent;
@@ -664,6 +671,71 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
+}
+
+.contacts {
+  background-color: #010203;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-contacts {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.content-contacts__title {
+  margin-bottom: 45px;
+}
+
+.content-contacts__subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 100px;
+}
+
+.form-contacts__field {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 40px;
+}
+
+.form-contacts__field::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form-contacts__field::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form-contacts__field:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-contacts__field::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form-contacts__field::placeholder {
+  color: #ffffff;
+}
+
+.warranty-contacts__text {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.warranty-contacts__img {
+  width: 396px;
+  height: 396px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
 }
 
 .webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
