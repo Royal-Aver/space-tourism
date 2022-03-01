@@ -1,6 +1,12 @@
 .about {
-  background: url(../../img/about/about-bg.jpg) top center no-repeat;
+  background: url(../../img/about/about-bg.jpg) top center;
+  background-repeat: no-repeat;
   background-size: cover;
+
+  @include max($xl) {
+    background-repeat: repeat-y;
+    text-align: center;
+}
 }
 
 .item-about {
@@ -12,13 +18,34 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
+
+  @include max($xl) {
+    display: block;
+}
+
+@include max($md) {
+
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+}
+
+.item-about__img {
+  @include max($xl) {
+    margin: 0 auto 40px;
+}
 }
 
 .content-about {
   max-width: 600px;
   width: 100%;
+
+  @include max($xl) {
+    max-width: 100%;
+}
 }
 
 .content-about__title {
@@ -47,6 +74,18 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+
+  @include max($xl) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include max($xl) {
+  display: block;
 }
 }
 
@@ -54,6 +93,10 @@
   border-collapse: collapse;
   margin-bottom: 50px;
   text-align: center;
+
+  @include max($xl) {
+    width: 100%;;
+  }
 }
 
 .table-about__tr {
@@ -68,16 +111,48 @@
       line-height: 43px;
     }
   }
+
+    @include max($md) {
+
+      &:first-child {
+      display: none;
+    }
+
+    &:not(:first-child) {
+      .table-about__td {
+      font-size: 18px;
+      line-height: 18px;
+      }
+  }
+}
 }
 
 .table-about__td {
   padding: 10px 30px 10px 0;
+
+      @include max($md) {
+        display: block;
+        text-align: right;
+
+        &::before {
+      content: attr(aria-label);
+      float: left;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $white;
+    }
+  }
 }
 
 .table-about__text {
   display: block;
   font-size: 14px;
   line-height: 17px;
+
+  @include max($md) {
+    display: inline-block;
+  }
 }
 
 .about-content__btn {

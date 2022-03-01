@@ -8,6 +8,10 @@ body {
 
 .section {
     padding: 100px 0;
+
+    @include max($md) {
+        padding: 50px 0;
+      }
 }
 
 .container {
@@ -22,4 +26,12 @@ body {
     line-height: 48px;
     font-weight: 400;
     margin-bottom: 100px;
+
+    @include max($xl) {
+        text-align: center;
+    }
+
+    @include max($md) {
+        margin-bottom: 50px;
+      }
 }

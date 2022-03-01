@@ -338,9 +338,10 @@ a {
 }
 
 .no-webp .about {
-  background: url(../../img/about/about-bg.jpg) top center no-repeat; }
+  background: url(../../img/about/about-bg.jpg) top center; }
 
 .about {
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -361,7 +362,7 @@ a {
 }
 
 .item-about:not(:last-child) {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .content-about {
@@ -825,6 +826,10 @@ a {
 }
 
 @media only screen and (max-width: 1199px) {
+  .title {
+    text-align: center;
+  }
+
   .header {
     padding: 30px 15px 30px;
   }
@@ -892,9 +897,50 @@ a {
             justify-content: center;
     margin-top: 0;
   }
+
+  .about {
+    background-repeat: repeat-y;
+    text-align: center;
+  }
+
+  .item-about {
+    display: block;
+  }
+
+  .item-about__img {
+    margin: 0 auto 40px;
+  }
+
+  .content-about {
+    max-width: 100%;
+  }
+
+  .content-about__desc p {
+    width: 100%;
+  }
+
+  .content-about__desc p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .content-about__desc {
+    display: block;
+  }
+
+  .table-about {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .title {
+    margin-bottom: 50px;
+  }
+
   .header__phone {
     font-size: 16px;
   }
@@ -928,6 +974,37 @@ a {
   .btn {
     font-size: 16px;
   }
+
+  .item-about:not(:last-child) {
+    margin-bottom: 70px;
+  }
+
+  .table-about__tr:first-child {
+    display: none;
+  }
+
+  .table-about__tr:not(:first-child) .table-about__td {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .table-about__td {
+    display: block;
+    text-align: right;
+  }
+
+  .table-about__td::before {
+    content: attr(aria-label);
+    float: left;
+  }
+
+  .table-about__td:not(:last-child) {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .table-about__text {
+    display: inline-block;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -940,7 +1017,7 @@ a {
 
 .webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
 
-.webp .about { background: url(../../img/about/about-bg.webp) top center no-repeat; }
+.webp .about { background: url(../../img/about/about-bg.webp) top center; }
 
 .webp .how-to { background: url(../../img/how-to/how-to-bg.webp) top center no-repeat; }
 
