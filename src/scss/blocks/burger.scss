@@ -1,5 +1,6 @@
 .burger {
   display: none;
+  height: 30px;
   width: 40px;
   border: none;
 
@@ -13,7 +14,7 @@
   height: 2px;
   background-color: $white;
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 
   &::after,
   &::before {

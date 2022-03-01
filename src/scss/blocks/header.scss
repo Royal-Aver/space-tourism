@@ -15,18 +15,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @include max($xl) {
-
-      }
 }
 
 .header__list {
     display: flex;
 
-    &--active {
-        transform: translateX(0);
-    }
 
     @include max($xl) {
         display: block;
@@ -37,9 +30,15 @@
         height: 100vh;
         padding-top: 100px;
         background-color: #000;
+        opacity: .95;
         text-align: center;
         transform: translateX(-150%);
+        transition: transform .5s;
+
+        &--active {
+            transform: translateX(0);
       }
+    }
 }
 
 .header__item {
@@ -55,7 +54,7 @@
             margin-right: 0;
         }
       }
-}
+    }
 
 .header__link {
     font-size: 18px;
@@ -85,6 +84,10 @@
 
     &:hover {
         color: $red;
+    }
+
+    @include max($md) {
+        font-size: 16px;
     }
 }
 

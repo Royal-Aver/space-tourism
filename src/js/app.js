@@ -2,11 +2,11 @@ import * as flsFunction from "./modules/function.js";
 
 flsFunction.isWebp();
 
-$(function(){
-  $('.burger').on('click', function(){
-    $('.header__list').toggleClass(".header__list--active")
-  })
-})
+
+document.querySelector('.burger')
+.addEventListener( "click" , (event) => {
+  document.querySelector('.header__list').classList.toggle('header__list--active');
+});
 
 new Swiper('.swiper-container', {
   navigation: {

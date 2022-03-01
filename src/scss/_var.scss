@@ -3,9 +3,10 @@ $blue: #036cca;
 $red: #ca0d0d;
 $gray: #e5e5e5;
 
-$sm: 320px;
-$md: 768px;
-$xl: 1440px;
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
 
 @mixin max($width) {
   @media only screen and (max-width: $width) {
