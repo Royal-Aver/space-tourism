@@ -47,7 +47,12 @@
 }
 
 .how-to__box-list {
+  display: none;
   text-align: center;
+
+  @include max($lg) {
+    display: block;
+}
 }
 
 .how-to__box-item {

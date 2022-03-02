@@ -2,14 +2,41 @@
   background: url(../../img/make-it/make-it-bg.jpg) top left no-repeat;
   background-size: cover;
   min-height: calc(100vh - 25px);
+
+  @include max($xl) {
+    min-height: calc(100vh - 250px);
+    background: url(../../img/make-it/make-it-bg.jpg) bottom left no-repeat;
+  }
+
+  @include max($md) {
+    min-height: calc(100vh - 450px);
+  }
+
+  @include max($sm) {
+    background: url(../../img/make-it/make-it-bg.jpg) center no-repeat;
+  }
 }
 
 .make-it__container {
   display: flex;
   justify-content: space-between;
+
+  @include max($xl) {
+    display: block;
+  }
 }
 
 .make-it__title {
+
+  @include max($lg) {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  @include max($sm) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .make-it__text {
@@ -24,4 +51,25 @@
       margin-left: 55px;
     }
   }
+
+  @include max($xl) {
+    justify-content: center;
+  }
+
+  @include max($sm) {
+    display: block;
+
+    & p {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
+

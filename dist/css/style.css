@@ -490,6 +490,7 @@ a {
 }
 
 .how-to__box-list {
+  display: none;
   text-align: center;
 }
 
@@ -968,6 +969,23 @@ a {
   .table-about {
     width: 100%;
   }
+
+  .no-webp .make-it {
+    background: url(../../img/make-it/make-it-bg.jpg) bottom left no-repeat; }
+
+  .make-it {
+    min-height: calc(100vh - 250px);
+  }
+
+  .make-it__container {
+    display: block;
+  }
+
+  .make-it__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -979,12 +997,21 @@ a {
     display: none;
   }
 
+  .how-to__box-list {
+    display: block;
+  }
+
   .how-to__box-item--hidden {
     display: none;
   }
 
   .how-to__box-item--float {
     display: block;
+  }
+
+  .make-it__title {
+    font-size: 44px;
+    line-height: 44px;
   }
 }
 
@@ -1057,6 +1084,10 @@ a {
   .table-about__text {
     display: inline-block;
   }
+
+  .make-it {
+    min-height: calc(100vh - 450px);
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1078,6 +1109,30 @@ a {
   .how-to__box-item:not(:last-child) {
     margin-bottom: 50px;
   }
+
+  .no-webp .make-it {
+    background: url(../../img/make-it/make-it-bg.jpg) center no-repeat; }
+
+  .make-it__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .make-it__text {
+    display: block;
+  }
+
+  .make-it__text p {
+    width: 100%;
+  }
+
+  .make-it__text p:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .make-it__text p:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
@@ -1093,3 +1148,13 @@ a {
 .webp .services__btn--astrounat::before { background-image: url(../../img/offers/astronaut.webp); }
 
 .webp .footer { background: url(../../img/footer/footer-bg.webp) top center no-repeat; }
+
+@media only screen and (max-width: 1199px) {
+
+  .webp .make-it { background: url(../../img/make-it/make-it-bg.webp) bottom left no-repeat; }
+}
+
+@media only screen and (max-width: 575px) {
+
+  .webp .make-it { background: url(../../img/make-it/make-it-bg.webp) center no-repeat; }
+}
