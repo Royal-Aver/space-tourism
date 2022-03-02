@@ -4,12 +4,21 @@
 
 .contacts__container {
   display: flex;
+
+  @include max($lg) {
+    display: block;
+  }
 }
 
 .content-contacts {
   max-width: 500px;
   width: 100%;
   margin-right: 100px;
+
+  @include max($lg) {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .content-contacts__title {
@@ -20,6 +29,15 @@
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 100px;
+
+  @include max($lg) {
+    margin-bottom: 30px;
+  }
+
+  @include max($md) {
+    font-size: 16px;
+  line-height: 16px;
+  }
 }
 
 .form-contacts__field {
@@ -32,14 +50,27 @@
   }
 }
 
+.warranty-contacts__content {
+
+  @include max($lg) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .warranty-contacts__text {
   font-size: 24px;
   line-height: 29px;
+
+  @include max($md) {
+    font-size: 16px;
+  }
 }
 
 .warranty-contacts__img {
-  width: 396px;
-  height: 396px;
-  object-fit: cover;
   margin-left: auto;
+
+  @include max($sm) {
+    display: none;
+  }
 }

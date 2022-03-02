@@ -808,10 +808,6 @@ a {
 }
 
 .warranty-contacts__img {
-  width: 396px;
-  height: 396px;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin-left: auto;
 }
 
@@ -994,7 +990,7 @@ a {
 
 @media only screen and (max-width: 991px) {
   .title {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .how-to__box {
@@ -1044,6 +1040,28 @@ a {
 
   .services__btn--astrounat::before {
     display: none;
+  }
+
+  .contacts__container {
+    display: block;
+  }
+
+  .content-contacts {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .content-contacts__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .warranty-contacts__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1146,6 +1164,15 @@ a {
     font-size: 16px;
     line-height: 20px;
   }
+
+  .content-contacts__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .warranty-contacts__text {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1215,6 +1242,10 @@ a {
 
   .services__text {
     margin-bottom: 30px;
+  }
+
+  .warranty-contacts__img {
+    display: none;
   }
 }
 
