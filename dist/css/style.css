@@ -656,6 +656,10 @@ a {
   margin-bottom: 25px;
 }
 
+.services__left-text {
+  margin-right: 20px;
+}
+
 .services__name,
 .services__text {
   font-size: 24px;
@@ -1013,6 +1017,34 @@ a {
     font-size: 44px;
     line-height: 44px;
   }
+
+  .special {
+    display: block;
+  }
+
+  .special__item {
+    width: 450px;
+  }
+
+  .special__item {
+    width: 100%;
+  }
+
+  .special__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .special__content {
+    min-height: 350px;
+  }
+
+  .offers__btn--hidden {
+    display: none;
+  }
+
+  .services__btn--astrounat::before {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1087,6 +1119,14 @@ a {
 
   .make-it {
     min-height: calc(100vh - 450px);
+  }
+
+  .special {
+    margin-bottom: 70px;
+  }
+
+  .services__text {
+    font-size: 16px;
   }
 }
 
