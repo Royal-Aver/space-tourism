@@ -39,7 +39,12 @@
             transform: translateX(0);
       }
     }
+
+    @include max($sm) {
+        width: 80%;
+      }
 }
+
 
 .header__item {
 

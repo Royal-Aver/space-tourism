@@ -362,7 +362,7 @@ a {
 }
 
 .item-about:not(:last-child) {
-  margin-bottom: 150px;
+  margin-bottom: 140px;
 }
 
 .content-about {
@@ -487,6 +487,42 @@ a {
 .how-to__box g:hover foreignObject {
   color: #036cca;
   font-size: 22px;
+}
+
+.how-to__box-list {
+  text-align: center;
+}
+
+.how-to__box-item {
+  position: relative;
+}
+
+.how-to__box-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.how-to__box-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../img/how-to/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.how-to__box-item--hidden {
+  display: none;
+}
+
+.how-to__box-item--float {
+  display: none;
 }
 
 .no-webp .make-it {
@@ -913,6 +949,8 @@ a {
 
   .content-about {
     max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
   }
 
   .content-about__desc p {
@@ -932,13 +970,27 @@ a {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .how-to__box {
+    display: none;
+  }
+
+  .how-to__box-item--hidden {
+    display: none;
+  }
+
+  .how-to__box-item--float {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .section {
     padding: 50px 0;
-  }
-
-  .title {
-    margin-bottom: 50px;
   }
 
   .header__phone {
@@ -1008,9 +1060,22 @@ a {
 }
 
 @media only screen and (max-width: 575px) {
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .header__list {
+    width: 80%;
+  }
+
   .left-hero__desc {
     display: block;
     margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .how-to__box-item:not(:last-child) {
     margin-bottom: 50px;
   }
 }

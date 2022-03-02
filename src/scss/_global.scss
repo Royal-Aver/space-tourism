@@ -31,7 +31,12 @@ body {
         text-align: center;
     }
 
-    @include max($md) {
+    @include max($lg) {
         margin-bottom: 50px;
       }
+
+      @include max($sm) {
+        font-size: 30px;
+        line-height: 30px;
+    }
 }

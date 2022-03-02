@@ -40,4 +40,57 @@
       font-size: 22px;
     }
   }
+
+  @include max($lg) {
+    display: none;
+}
+}
+
+.how-to__box-list {
+  text-align: center;
+}
+
+.how-to__box-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  @include max($sm) {
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/how-to/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0)
+  }
+}
+
+.how-to__box-item--hidden {
+  display: none;
+
+  @include max($lg) {
+    display: none;
+}
+}
+
+.how-to__box-item--float {
+  display: none;
+
+  @include max($lg) {
+    display: block;
+}
 }
