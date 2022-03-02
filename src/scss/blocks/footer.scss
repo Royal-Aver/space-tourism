@@ -1,13 +1,25 @@
 .footer {
-  background: url(../../img/footer/footer-bg.jpg) top center no-repeat;
+  background: url(../../img/footer/footer-bg.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0 150px;
+
+  @include max($xl) {
+    padding: 50px 0;
+  }
 }
 
 .footer__list {
   display: flex;
   justify-content: flex-end;
+
+  @include max($sm) {
+    display: block;
+    text-align: center;
+  }
 }
+
 .footer__item {
   display: flex;
   flex-direction: column;
@@ -15,12 +27,25 @@
 
   &:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 20px;
+  }
+
+  @include max($sm) {
+    width: 100%;
   }
 }
 
+
 .footer__text {
+
   &:not(:last-child) {
     margin-bottom: 40px;
+  }
+
+  @include max($sm) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 

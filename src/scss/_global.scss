@@ -12,6 +12,10 @@ body {
     @include max($md) {
         padding: 50px 0;
       }
+
+      @include max($sm) {
+        padding: 20px 0;
+      }
 }
 
 .container {

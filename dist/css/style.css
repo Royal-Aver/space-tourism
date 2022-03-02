@@ -236,9 +236,11 @@ a {
 }
 
 .no-webp .hero {
-  background: url(../../img/hero/hero-bg.jpg) no-repeat top right; }
+  background: url(../../img/hero/hero-bg.jpg); }
 
 .hero {
+  background-position: top right;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -275,6 +277,7 @@ a {
 }
 
 .left-hero__title-bottom {
+  display: block;
   font-size: 110px;
 }
 
@@ -338,9 +341,10 @@ a {
 }
 
 .no-webp .about {
-  background: url(../../img/about/about-bg.jpg) top center; }
+  background: url(../../img/about/about-bg.jpg); }
 
 .about {
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -447,9 +451,11 @@ a {
 }
 
 .no-webp .how-to {
-  background: url(../../img/how-to/how-to-bg.jpg) top center no-repeat; }
+  background: url(../../img/how-to/how-to-bg.jpg); }
 
 .how-to {
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -527,9 +533,11 @@ a {
 }
 
 .no-webp .make-it {
-  background: url(../../img/make-it/make-it-bg.jpg) top left no-repeat; }
+  background: url(../../img/make-it/make-it-bg.jpg); }
 
 .make-it {
+  background-position: top left;
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: calc(100vh - 25px);
 }
@@ -560,9 +568,11 @@ a {
 }
 
 .no-webp .offers {
-  background: url(../../img/offers/offers-bg.jpg) top center no-repeat; }
+  background: url(../../img/offers/offers-bg.jpg); }
 
 .offers {
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -812,9 +822,11 @@ a {
 }
 
 .no-webp .footer {
-  background: url(../../img/footer/footer-bg.jpg) top center no-repeat; }
+  background: url(../../img/footer/footer-bg.jpg); }
 
 .footer {
+  background-position: left center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0 150px;
 }
@@ -841,6 +853,7 @@ a {
 
 .footer__item:not(:last-child) {
   margin-right: 50px;
+  margin-bottom: 20px;
 }
 
 .footer__text:not(:last-child) {
@@ -936,7 +949,6 @@ a {
   }
 
   .about {
-    background-repeat: repeat-y;
     text-align: center;
   }
 
@@ -970,11 +982,9 @@ a {
     width: 100%;
   }
 
-  .no-webp .make-it {
-    background: url(../../img/make-it/make-it-bg.jpg) bottom left no-repeat; }
-
   .make-it {
     min-height: calc(100vh - 250px);
+    background-position: bottom left;
   }
 
   .make-it__container {
@@ -985,6 +995,10 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .footer {
+    padding: 50px 0;
   }
 }
 
@@ -1176,6 +1190,10 @@ a {
 }
 
 @media only screen and (max-width: 575px) {
+  .section {
+    padding: 20px 0;
+  }
+
   .title {
     font-size: 30px;
     line-height: 30px;
@@ -1195,8 +1213,9 @@ a {
     margin-bottom: 50px;
   }
 
-  .no-webp .make-it {
-    background: url(../../img/make-it/make-it-bg.jpg) center no-repeat; }
+  .make-it {
+    background-position: center;
+  }
 
   .make-it__title {
     font-size: 24px;
@@ -1247,28 +1266,31 @@ a {
   .warranty-contacts__img {
     display: none;
   }
+
+  .footer__list {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__item {
+    width: 100%;
+  }
+
+  .footer__text:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
-.webp .hero { background: url(../../img/hero/hero-bg.webp) no-repeat top right; }
+.webp .hero { background: url(../../img/hero/hero-bg.webp); }
 
-.webp .about { background: url(../../img/about/about-bg.webp) top center; }
+.webp .about { background: url(../../img/about/about-bg.webp); }
 
-.webp .how-to { background: url(../../img/how-to/how-to-bg.webp) top center no-repeat; }
+.webp .how-to { background: url(../../img/how-to/how-to-bg.webp); }
 
-.webp .make-it { background: url(../../img/make-it/make-it-bg.webp) top left no-repeat; }
+.webp .make-it { background: url(../../img/make-it/make-it-bg.webp); }
 
-.webp .offers { background: url(../../img/offers/offers-bg.webp) top center no-repeat; }
+.webp .offers { background: url(../../img/offers/offers-bg.webp); }
 
 .webp .services__btn--astrounat::before { background-image: url(../../img/offers/astronaut.webp); }
 
-.webp .footer { background: url(../../img/footer/footer-bg.webp) top center no-repeat; }
-
-@media only screen and (max-width: 1199px) {
-
-  .webp .make-it { background: url(../../img/make-it/make-it-bg.webp) bottom left no-repeat; }
-}
-
-@media only screen and (max-width: 575px) {
-
-  .webp .make-it { background: url(../../img/make-it/make-it-bg.webp) center no-repeat; }
-}
+.webp .footer { background: url(../../img/footer/footer-bg.webp); }

@@ -1,11 +1,13 @@
 .make-it {
-  background: url(../../img/make-it/make-it-bg.jpg) top left no-repeat;
+  background: url(../../img/make-it/make-it-bg.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: calc(100vh - 25px);
 
   @include max($xl) {
     min-height: calc(100vh - 250px);
-    background: url(../../img/make-it/make-it-bg.jpg) bottom left no-repeat;
+    background-position: bottom left;
   }
 
   @include max($md) {
@@ -13,7 +15,7 @@
   }
 
   @include max($sm) {
-    background: url(../../img/make-it/make-it-bg.jpg) center no-repeat;
+    background-position: center;
   }
 }
 

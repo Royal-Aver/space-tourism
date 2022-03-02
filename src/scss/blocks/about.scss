@@ -1,10 +1,10 @@
 .about {
-  background: url(../../img/about/about-bg.jpg) top center;
+  background: url(../../img/about/about-bg.jpg);
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include max($xl) {
-    background-repeat: repeat-y;
     text-align: center;
 }
 }
