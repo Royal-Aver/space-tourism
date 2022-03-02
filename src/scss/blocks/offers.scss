@@ -3,6 +3,13 @@
   background-size: cover;
 }
 
+.offers__title {
+
+  @include max($sm) {
+    font-size: 28px;
+  }
+}
+
 .special {
   display: flex;
   justify-content: space-between;
@@ -46,6 +53,11 @@
   @include max($lg) {
     min-height: 350px;
   }
+
+
+@include max($sm) {
+  padding: 20px;
+}
 }
 
 .special__text {
@@ -100,12 +112,28 @@
 
 .services {
   margin-bottom: 200px;
+
+  @include max($md) {
+    margin-bottom: 50px;
+  }
+}
+
+.services__title {
+
+  @include max($sm) {
+    font-size: 22px;
+  }
 }
 
 .services__content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+
+  @include max($sm) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .services__left-text {
@@ -121,6 +149,10 @@
 .services__name {
   margin-bottom: 25px;
   font-weight: 400;
+
+  @include max($sm) {
+    font-size: 18px;
+  }
 }
 
 .services__text {
@@ -144,6 +176,10 @@
 
   @include max($md) {
     font-size: 16px;
+  }
+
+  @include max($sm) {
+    margin-bottom: 30px;
   }
 }
 

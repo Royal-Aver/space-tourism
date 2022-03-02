@@ -1125,8 +1125,26 @@ a {
     margin-bottom: 70px;
   }
 
+  .services {
+    margin-bottom: 50px;
+  }
+
   .services__text {
     font-size: 16px;
+  }
+
+  .swiper-container {
+    border: none;
+    padding: 0;
+  }
+
+  .swiper-img {
+    width: 560px;
+  }
+
+  .swiper-text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -1171,6 +1189,31 @@ a {
   }
 
   .make-it__text p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .offers__title {
+    font-size: 28px;
+  }
+
+  .special__content {
+    padding: 20px;
+  }
+
+  .services__title {
+    font-size: 22px;
+  }
+
+  .services__content {
+    display: block;
+    text-align: center;
+  }
+
+  .services__name {
+    font-size: 18px;
+  }
+
+  .services__text {
     margin-bottom: 30px;
   }
 }
